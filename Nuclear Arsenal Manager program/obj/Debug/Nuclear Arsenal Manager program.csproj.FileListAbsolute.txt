@@ -1,0 +1,10 @@
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\bin\Debug\Nuclear Arsenal Manager program.exe.config
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\bin\Debug\Nuclear Arsenal Manager program.exe
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\bin\Debug\Nuclear Arsenal Manager program.pdb
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear Arsenal Manager program.csproj.AssemblyReference.cache
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear_Arsenal_Manager_program.Properties.Resources.resources
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear Arsenal Manager program.csproj.GenerateResource.cache
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear Arsenal Manager program.csproj.CoreCompileInputs.cache
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear Arsenal Manager program.exe
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear Arsenal Manager program.pdb
+D:\semester 3\Application development\Nuclear-Arsenal-Manager\Nuclear Arsenal Manager program\obj\Debug\Nuclear_Arsenal_Manager_program.LogIn.resources

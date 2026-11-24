@@ -19,11 +19,11 @@ CREATE TABLE SITES
 CREATE TABLE STAFF
 (
     StaffID INT IDENTITY(1,1) PRIMARY KEY,
-    Username NVARCHAR(50) UNIQUE NOT NULL,
-    PasswordHash NVARCHAR(255) NOT NULL,
-    FullName NVARCHAR(100) NOT NULL,
-    Role NVARCHAR(20) NOT NULL,
-    ClearanceLevel INT,
+    UserID VARCHAR(50) UNIQUE NOT NULL,
+    PasswordHash VARCHAR(255) NOT NULL,
+    FullName VARCHAR(100) NOT NULL,
+    Clearance VARCHAR(20) NOT NULL,
+    SecurityQuestion VARCHAR(50) NOT NULL,
     SiteID INT,
 
     CONSTRAINT FK_Staff_Site
@@ -31,7 +31,7 @@ CREATE TABLE STAFF
         REFERENCES SITES(SiteID)
 );
 
-CREATE TABLE ASSETS
+CREATE TABLE ASSETS -- The nukes
 (
     AssetID INT IDENTITY(1,1) PRIMARY KEY,
     SerialNumber NVARCHAR(50) UNIQUE NOT NULL,
@@ -49,8 +49,8 @@ CREATE TABLE REQUESTS
 (
     RequestID INT IDENTITY(1,1) PRIMARY KEY,
     StaffID INT NOT NULL,
-    RequestText NVARCHAR(MAX) NOT NULL,
-    Status NVARCHAR(20) DEFAULT 'Pending',
+    RequestText VARCHAR(MAX) NOT NULL,
+    Status VARCHAR(20) DEFAULT 'Pending',
     DateSubmitted DATETIME DEFAULT GETDATE(),
     DateReviewed DATETIME NULL,
 
@@ -67,7 +67,7 @@ CREATE TABLE TRANSFERS
     ToSiteID INT NOT NULL,
     RequesterID INT NOT NULL,
     ApproverID INT NULL,
-    TransferStatus NVARCHAR(20) DEFAULT 'Pending',
+    TransferStatus VARCHAR(20) DEFAULT 'Pending',
     RequestDate DATETIME DEFAULT GETDATE(),
     ApprovalDate DATETIME NULL,
     TransferDate DATETIME NULL,
@@ -97,10 +97,8 @@ CREATE TABLE AUDITLOG
 (
     LogID INT IDENTITY(1,1) PRIMARY KEY,
     StaffID INT NOT NULL,
-    ActionTaken NVARCHAR(100) NOT NULL,
-    TableAffected NVARCHAR(50) NOT NULL,
-    OldValue NVARCHAR(MAX) NULL,
-    NewValue NVARCHAR(MAX) NULL,
+    ActionTaken VARCHAR(100) NOT NULL,
+    TableAffected VARCHAR(50) NOT NULL,
     ActionTimestamp DATETIME DEFAULT GETDATE(),
 
     CONSTRAINT FK_AuditLog_Staff
